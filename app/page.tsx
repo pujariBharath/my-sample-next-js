@@ -72,8 +72,8 @@ function ContactForm() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-foreground">
-      <header className="bg-white border-b border-border">
+    <div className="min-h-screen flex flex-col text-foreground">
+      <header className="border-b border-border">
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-4">
             <Link href="/" className="font-bold text-2xl">LOGO</Link>
@@ -93,7 +93,7 @@ export default function Home() {
       </header>
 
       <main className="flex-grow">
-        <section className="bg-gray-50 py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gray-50 py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">How Culture Pro Works</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -146,7 +146,7 @@ export default function Home() {
                   description: 'Get comprehensive data-driven insights for better decision making'
                 }
               ].map((item, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                <div key={index} className="rounded-lg shadow-md p-6">
                   <Image src="/placeholder.svg" alt={item.title} width={300} height={200} className="w-full rounded-lg mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p>{item.description}</p>
@@ -174,7 +174,7 @@ export default function Home() {
                   description: 'Immerse yourself in a holistic engagement experience that nurtures both individual and organizational growth.'
                 }
               ].map((item, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
+                <div key={index} className="rounded-lg p-6">
                   <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                   <p className="mb-4">{item.description}</p>
                   <Link href="#" className="text-primary font-bold">Services →</Link>
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gray-50 py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row gap-12">
               <div className="md:w-1/2">
@@ -229,7 +229,7 @@ export default function Home() {
                 'Wellness programs',
                 'Remote engagement tools'
               ].map((solution, index) => (
-                <button key={index} className="solution-btn text-left bg-white border border-border rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                <button key={index} className="solution-btn text-left border border-border rounded-lg p-6 hover:shadow-md transition-all duration-300">
                   <h3 className="text-lg font-semibold mb-2">{solution}</h3>
                   <p className="text-muted-foreground mb-4">Customized solution for {solution.toLowerCase()}</p>
                   <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-white py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-4">Get in touch with us</h2>
@@ -254,7 +254,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-white text-foreground border-t border-border py-12">
+      <footer className="text-foreground border-t border-border py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {[
