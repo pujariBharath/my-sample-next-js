@@ -1,94 +1,290 @@
-import Image from "next/image";
+'use client'
+
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+
+const Button = ({ 
+  children, 
+  className = '', 
+  variant = 'default', 
+  size = 'default', 
+  ...props 
+}: React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: 'default' | 'outline';
+  size?: 'default' | 'lg';
+}) => {
+  const baseStyles = 'font-medium rounded-md transition-colors'
+  const variantStyles = {
+    default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+    outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'
+  }
+  const sizeStyles = {
+    default: 'h-10 px-4 py-2',
+    lg: 'h-11 px-8'
+  }
+
+  return (
+    <button 
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  )
+}
+
+const Input = ({ className = '', ...props }: React.InputHTMLAttributes<HTMLInputElement>) => {
+  return (
+    <input
+      className={`flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
+      {...props}
+    />
+  )
+}
+
+function ContactForm() {
+  const [formSubmitted, setFormSubmitted] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    setFormSubmitted(true)
+    e.currentTarget.reset()
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="grid md:grid-cols-2 gap-4">
+        <Input type="text" name="firstName" placeholder="First Name" required aria-label="First Name" />
+        <Input type="text" name="lastName" placeholder="Last Name" required aria-label="Last Name" />
+      </div>
+      <Input type="email" name="email" placeholder="Email" required aria-label="Email" />
+      <Input type="tel" name="phone" placeholder="Phone" required aria-label="Phone" />
+      <Input type="text" name="company" placeholder="Company" required aria-label="Company" />
+      <Button type="submit" className="w-full">Continue</Button>
+      {formSubmitted && (
+        <p className="mt-4 text-green-600 text-center" role="alert">Thank you for your submission!</p>
+      )}
+    </form>
+  )
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <header className="bg-background border-b border-border">
+        <div className="container mx-auto px-4">
+          <nav className="flex justify-between items-center py-4">
+            <Link href="/" className="font-bold text-2xl">LOGO</Link>
+            <ul className="hidden md:flex space-x-8">
+              {['Home', 'Case Studies', 'Pricing', 'Featured', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="text-muted-foreground hover:text-foreground">{item}</Link>
+                </li>
+              ))}
+            </ul>
+            <div className="flex space-x-4">
+              <Button variant="outline">Sign in</Button>
+              <Button>Get Started</Button>
+            </div>
+          </nav>
         </div>
+      </header>
+
+      <main className="flex-grow">
+        <section className="bg-muted py-16">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <h1 className="text-4xl font-bold mb-4">Culture Pro</h1>
+                <p className="text-xl text-muted-foreground mb-4">AI-Based Employee Engagement Platform</p>
+                <p className="mb-6">
+                  In professional and personal engagements, one major challenge is how to create lasting engagement.
+                  We typically hire employees based on their functional skills.
+                </p>
+                <Button size="lg">Talk to our expert today</Button>
+              </div>
+              <div className="md:w-1/2">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765.jpg-Yf0KOfvHCTQK07BwjWQ92M1MgmQ0jC.jpeg"
+                  alt="AI-powered workspace"
+                  width={500}
+                  height={300}
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 border-y border-border">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-around items-center flex-wrap gap-8">
+              {['Pepsi', 'Active Campaign', 'Grammarly', 'PandaDoc', 'Freshworks', 'Adobe'].map((brand) => (
+                <Image key={brand} src="/placeholder.svg" alt={brand} width={100} height={40} className="h-10" />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-muted py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">How Culture Pro Works</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: 'AI-Driven Persona Mapping',
+                  description: 'Track and analyze your cultural metrics with intelligent data visualization'
+                },
+                {
+                  title: 'Customizable Dictionaries',
+                  description: 'Train your AI with customized words unique to cultural development'
+                },
+                {
+                  title: 'Visual Reports & Insights',
+                  description: 'Get comprehensive data-driven insights for better decision making'
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-background rounded-lg shadow-md p-6">
+                  <Image src="/placeholder.svg" alt={item.title} width={300} height={200} className="w-full rounded-lg mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Culture Pro AI-Based Employee Engagement Platform</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: 'Enhance',
+                  description: 'Upgrade your workplace culture with our innovative solutions designed to foster engagement and boost productivity.'
+                },
+                {
+                  title: 'Inspire',
+                  description: 'Unleash your team\'s potential and drive success in a collaborative and empowering environment.'
+                },
+                {
+                  title: 'Transform',
+                  description: 'Immerse yourself in a holistic engagement experience that nurtures both individual and organizational growth.'
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-muted rounded-lg p-6">
+                  <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+                  <p className="mb-4">{item.description}</p>
+                  <Link href="#" className="text-primary font-bold">Services →</Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-muted py-16">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row gap-12">
+              <div className="md:w-1/2">
+                <h2 className="text-3xl font-bold mb-4">Our Stories</h2>
+                <h3 className="text-xl font-semibold mb-4">Culture Pro AI-Based Employee Engagement Platform</h3>
+                <p className="mb-4">
+                  At Culture Pro, we are more than just a platform; we are a catalyst for creating a thriving workplace
+                  culture. Our cutting-edge AI technology is tailored to enhance employee engagement while providing
+                  meaningful insights.
+                </p>
+                <p>
+                  With features that focus on personalized insights and a supportive atmosphere, we aim to empower every
+                  employee to contribute to a vibrant workplace. Whether you are looking to boost morale, increase
+                  productivity, or foster innovation, join us on the path to a more engaged and fulfilled workforce.
+                </p>
+              </div>
+              <div className="md:w-1/2">
+                <Image
+                  src="/placeholder.svg"
+                  alt="Team Culture"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-4">Our solutions</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Customized strategies to elevate your employee engagement experience
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                'AI-driven insights',
+                'Team-building initiatives',
+                'Feedback systems',
+                'Workshops',
+                'Wellness programs',
+                'Remote engagement tools'
+              ].map((solution, index) => (
+                <button key={index} className="solution-btn text-left bg-background border border-border rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                  <h3 className="text-lg font-semibold mb-2">{solution}</h3>
+                  <p className="text-muted-foreground mb-4">Customized solution for {solution.toLowerCase()}</p>
+                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-background py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-4">Get in touch with us</h2>
+              <p className="text-xl text-muted-foreground text-center mb-8">
+                Connect with our AI-Based Employee Engagement Platform team
+              </p>
+              <ContactForm />
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-background text-foreground border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Company',
+                links: ['About us', 'Careers', 'Partners']
+              },
+              {
+                title: 'Support',
+                links: ['Help Desk', 'FAQs', 'Contact us']
+              },
+              {
+                title: 'Get in touch',
+                links: ['+1 (555) 123-4567', 'help@example.com']
+              }
+            ].map((section, index) => (
+              <div key={index}>
+                <h4 className="text-primary font-semibold mb-4">{section.title}</h4>
+                <ul className="space-y-2">
+                  {section.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <Link href="#" className="text-muted-foreground hover:text-foreground">{link}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
       </footer>
     </div>
-  );
+  )
 }
