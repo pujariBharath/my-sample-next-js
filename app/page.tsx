@@ -14,9 +14,9 @@ const Button = ({
   variant?: 'default' | 'outline';
   size?: 'default' | 'lg';
 }) => {
-  const baseStyles = ''
+  const baseStyles = 'font-medium rounded-md transition-colors'
   const variantStyles = {
-    default: '',
+    default: 'bg-primary text-primary-foreground hover:bg-primary/90',
     outline: ''
   }
   const sizeStyles = {
