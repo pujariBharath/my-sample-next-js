@@ -4,6 +4,36 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
+const Button = ({ 
+  children, 
+  className = '', 
+  variant = 'default', 
+  size = 'default', 
+  ...props 
+}: React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: 'default' | 'outline';
+  size?: 'default' | 'lg';
+}) => {
+  const baseStyles = 'font-medium rounded-md transition-colors'
+  const variantStyles = {
+    default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+    outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'
+  }
+  const sizeStyles = {
+    default: 'h-10 px-4 py-2',
+    lg: 'h-11 px-8'
+  }
+
+  return (
+    <button 
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  )
+}
+
 const Input = ({ className = '', ...props }: React.InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <input
@@ -77,7 +107,7 @@ export default function Home() {
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765.jpg-Yf0KOfvHCTQK07BwjWQ92M1MgmQ0jC.jpeg"
+                  src="C:\Users\kingb\OneDrive\Desktop\my-sample-next-js\futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg"
                   alt="AI-powered workspace"
                   width={500}
                   height={300}
@@ -173,7 +203,7 @@ export default function Home() {
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="/placeholder.svg"
+                  src="C:\Users\kingb\OneDrive\Desktop\my-sample-next-js\blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
                   alt="Team Culture"
                   width={500}
                   height={300}
