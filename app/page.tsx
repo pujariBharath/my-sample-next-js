@@ -104,7 +104,7 @@ export default function Home() {
                 <Button size="lg">Talk to our expert today</Button>
               </div>
               <div className="md:w-1/2">
-                <img src="1stt.jpg"alt="AI-powered workspace" width={500} height={300}className="w-full rounded-lg"/>
+                <img src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg" alt="" />
               </div>
             </div>
           </div>
