@@ -86,7 +86,6 @@ const CulturePro: NextPage = () => {
 
           </div>
         </section>
-
         <section className="py-20 px-6">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
@@ -128,8 +127,7 @@ const CulturePro: NextPage = () => {
       ))}
     </div>
   </div>
-</section>
-
+</section>      
 
         <section className="py-20 px-6 bg-muted">
           <div className="max-w-6xl mx-auto">
