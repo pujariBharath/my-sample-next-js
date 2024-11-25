@@ -103,9 +103,10 @@ export default function Home() {
                 </p>
                 <Button size="lg">Talk to our expert today</Button>
               </div>
-    
+              <div className="md:w-1/2">
+                <img src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg" alt="ai image" />
+              </div>
             </div>
-            <img src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg" alt="" />
           </div>
         </section>
 
@@ -141,7 +142,7 @@ export default function Home() {
                 }
               ].map((item, index) => (
                 <div key={index} className="rounded-lg shadow-md p-6">
-                  <Image src="/placeholder.svg" alt={item.title} width={300} height={200} className="w-full rounded-lg mb-4" />
+                  <img src="1stt.jpg" alt="1st pic" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
