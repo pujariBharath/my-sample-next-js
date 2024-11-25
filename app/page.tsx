@@ -66,13 +66,7 @@ const CulturePro: NextPage = () => {
               <Button size="lg">Talk to our expert today</Button>
             </div>
             <div className="md:w-1/2">
-              <img
-                src="1stt.jpg" 
-                alt="AI-powered workspace"
-                width={600}
-                height={400}
-                className="rounded-lg"
-              />
+              <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900" alt="" />
             </div>
           </div>
         </section>
