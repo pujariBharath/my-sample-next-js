@@ -129,6 +129,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
+
                   title: 'AI-Driven Persona Mapping',
                   description: 'Track and analyze your cultural metrics with intelligent data visualization'
                 },
@@ -142,8 +143,10 @@ export default function Home() {
                 }
               ].map((item, index) => (
                 <div key={index} className="rounded-lg shadow-md p-6">
-                  <img src="1stt.jpg" alt="1st pic" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <img src="man-wearing-glasses-jacket-with-beard_1213434-6204.jpg" alt="" />
+                  <img src="business-people-working-with-ipad-side-view_23-2150103553.avif" alt="" />
+                  <img src="1stt.jpg" alt="" />
                   <p>{item.description}</p>
                 </div>
               ))}
