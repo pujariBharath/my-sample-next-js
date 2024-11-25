@@ -78,6 +78,10 @@ export default function Home() {
           <nav className="flex justify-between items-center py-4">
             <Link href="/" className="font-bold text-2xl">LOGO</Link>
             <Link href="Home" className="home">Home</Link>
+            <Link href="How it works" className="home">How it works</Link>
+            <Link href="Pricing" className="home">Pricing</Link>
+            <Link href="Features" className="home">Features</Link>
+            <Link href="contact" className="home">Contact</Link>
             <div className="flex space-x-4">
               <Button variant="outline">Sign in</Button>
               <Button>Get Started</Button>
