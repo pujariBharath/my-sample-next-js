@@ -86,48 +86,29 @@ const CulturePro: NextPage = () => {
 
           </div>
         </section>
+
         <section className="py-20 px-6">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        {
-          title: "AI-Driven Persona Mapping",
-          description:
-            "Track and analyze your cultural metrics with intelligent data visualization",
-          image:
-            "https://img.freepik.com/free-photo/artificial-intelligence-hologram-businessman-background_23-2148524792.jpg",
-        },
-        {
-          title: "Customizable Dictionaries",
-          description:
-            "Train your AI with customized words unique to cultural development",
-          image:
-            "https://img.freepik.com/free-photo/futuristic-technology-abstract-background_23-2148537583.jpg",
-        },
-        {
-          title: "Visual Reports & Insights",
-          description:
-            "Get comprehensive data-driven insights for better decision making",
-          image:
-            "https://img.freepik.com/free-photo/digital-business-networking-concept-background_23-2148548108.jpg",
-        },
-      ].map((card, index) => (
-        <div key={index} className="p-6 border rounded-lg shadow-lg">
-          <img
-            src={card.image}
-            alt={card.title}
-            width={300}
-            height={200}
-            className="rounded-lg mb-4"
-          />
-          <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-          <p className="text-muted-foreground">{card.description}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { title: 'AI-Driven Persona Mapping', description: 'Track and analyze your cultural metrics with intelligent data visualization', image: 'https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid' },
+                { title: 'Customizable Dictionaries', description: 'Train your AI with customized words unique to cultural development', image: '2nd.jpg' },
+                { title: 'Visual Reports & Insights', description: 'Get comprehensive data-driven insights for better decision making', image: '3rd.jpg' }
+              ].map((card, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid"  />
+                    
+                    <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+                    <p className="text-muted-foreground">{card.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 px-6 bg-muted">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-10">Culture Pro AI-Based Employee Engagement Platform</h2>
