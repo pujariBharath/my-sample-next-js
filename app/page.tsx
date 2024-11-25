@@ -90,25 +90,53 @@ const CulturePro: NextPage = () => {
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { title: 'AI-Driven Persona Mapping', description: 'Track and analyze your cultural metrics with intelligent data visualization', image: '1stt.jpg' },
-                { title: 'Customizable Dictionaries', description: 'Train your AI with customized words unique to cultural development', image: '2nd.jpg' },
-                { title: 'Visual Reports & Insights', description: 'Get comprehensive data-driven insights for better decision making', image: '3rd.jpg' }
-              ].map((card, index) => (
-                <Card key={index}>
-                  <CardContent className="p-6">
-                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid"  />
-                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid" alt={card.title} width={300} height={200} className="rounded-lg mb-4" />
-                    
-                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid" alt={card.title} width={300} height={200} className="rounded-lg mb-4" />
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8 bg-gray-50">
+      <div className="bg-white shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <Image
+          src="/ai-driven.png" // Replace this with the correct image URL
+          alt="AI-Driven Persona Mapping"
+          width={300}
+          height={200}
+          className="rounded"
+        />
+        <h3 className="font-bold text-lg mt-4">AI-Driven Persona Mapping</h3>
+        <p className="text-gray-600 mt-2">
+          "Our AI engine analyzes your cultural attributes and functional skills
+          to match you with the right roles."
+        </p>
+      </div>
 
-                    <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-                    <p className="text-muted-foreground">{card.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+      <div className="bg-white shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <Image
+          src="/customizable-dictionaries.png" // Replace with the correct image URL
+          alt="Customizable Dictionaries"
+          width={300}
+          height={200}
+          className="rounded"
+        />
+        <h3 className="font-bold text-lg mt-4">Customizable Dictionaries</h3>
+        <p className="text-gray-600 mt-2">
+          "With over 200 well-researched words, Culture Pro tailors the
+          assessment to your industry, whether it’s startups, corporates, NGOs,
+          or beyond."
+        </p>
+      </div>
+
+      <div className="bg-white shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <Image
+          src="/visual-reports.png" // Replace with the correct image URL
+          alt="Visual Reports & Insights"
+          width={300}
+          height={200}
+          className="rounded"
+        />
+        <h3 className="font-bold text-lg mt-4">Visual Reports & Insights</h3>
+        <p className="text-gray-600 mt-2">
+          "Get comprehensive visual maps to make informed decisions on employee
+          placement and satisfaction."
+        </p>
+      </div>
+    </div>
           </div>
         </section>
 
