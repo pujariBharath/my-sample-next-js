@@ -105,7 +105,7 @@ export default function Home() {
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="C:\Users\kingb\OneDrive\Desktop\my-sample-next-js\futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg"
+                  src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg"
                   alt="AI-powered workspace"
                   width={500}
                   height={300}
