@@ -119,6 +119,12 @@ export default function Home() {
         <section className="py-12 border-y border-border">
           <div className="container mx-auto px-4">
             <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab121c368c0f3c1a8ca5e_Frame%202087325962.svg" alt="" />
+            <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab121ded9009bc4efd720_Frame%202087325959.svg" alt="" />
+            <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab1231c0265f85185458a_Frame%202087325958.svg" alt="" />
+            <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab1231c0265f85185458a_Frame%202087325958.svg" alt="" />
+            <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab12184d5fa2b41caca87_Frame%202087325963.svg" alt="" />
+            <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ae01094096666070b7ded_image%201906.webp" alt="" />
+
           </div>
         </section>
 
