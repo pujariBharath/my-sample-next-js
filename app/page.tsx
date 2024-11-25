@@ -141,7 +141,11 @@ export default function Home() {
                   description: 'Get comprehensive data-driven insights for better decision making'
                 }
               ].map((item, index) => (
-                <img src="1stt.jpg" alt="" />
+                <div key={index} className="rounded-lg shadow-md p-6">
+                  <img src="1stt.jpg" alt="1st pic" />
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
               ))}
             </div>
           </div>
