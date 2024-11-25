@@ -103,10 +103,9 @@ export default function Home() {
                 </p>
                 <Button size="lg">Talk to our expert today</Button>
               </div>
-              <div className="md:w-1/2">
-                <img src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg" alt="" />
-              </div>
+    
             </div>
+            <img src="futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765 (1).jpg" alt="" />
           </div>
         </section>
 
