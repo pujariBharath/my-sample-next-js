@@ -66,8 +66,8 @@ const CulturePro: NextPage = () => {
               <Button size="lg">Talk to our expert today</Button>
             </div>
             <div className="md:w-1/2">
-              <Image 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003765.jpg-Yf0KOfvHCTQK07BwjWQ92M1MgmQ0jC.jpeg" 
+              <img
+                src="1stt.jpg" 
                 alt="AI-powered workspace"
                 width={600}
                 height={400}
@@ -79,9 +79,11 @@ const CulturePro: NextPage = () => {
 
         <section className="py-10 px-6 bg-muted">
           <div className="max-w-6xl mx-auto flex justify-between items-center flex-wrap">
-            {['pepsi', 'active-campaign', 'grammarly', 'pandadoc', 'freshworks', 'adobe'].map((brand) => (
-              <Image key={brand} src={`/${brand}-logo.svg`} alt={brand} width={100} height={50} className="mb-4" />
-            ))}
+          <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab121c368c0f3c1a8ca5e_Frame%202087325962.svg" alt="" />
+          <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab121ded9009bc4efd720_Frame%202087325959.svg" alt="" />
+          <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab1231c0265f85185458a_Frame%202087325958.svg" alt="" />
+          <img src="https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/657ab1211fb97ff1a55330df_Frame%202087325957.svg" alt="" />
+
           </div>
         </section>
 
