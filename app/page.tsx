@@ -77,13 +77,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-4">
             <Link href="/" className="font-bold text-2xl">LOGO</Link>
-            <ul className="hidden md:flex space-x-8">
-              {['Home', 'Case Studies', 'Pricing', 'Featured', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">{item}</Link>
-                </li>
-              ))}
-            </ul>
+            <Link href="Home" className="home">Home</Link>
             <div className="flex space-x-4">
               <Button variant="outline">Sign in</Button>
               <Button>Get Started</Button>
