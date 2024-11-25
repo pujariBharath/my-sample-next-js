@@ -98,7 +98,9 @@ const CulturePro: NextPage = () => {
               ].map((card, index) => (
                 <Card key={index}>
                   <CardContent className="p-6">
+                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid"  />
                     <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid" alt={card.title} width={300} height={200} className="rounded-lg mb-4" />
+                    
                     <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid" alt={card.title} width={300} height={200} className="rounded-lg mb-4" />
 
                     <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
