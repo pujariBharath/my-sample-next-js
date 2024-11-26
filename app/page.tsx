@@ -139,8 +139,8 @@ const CulturePro: NextPage = () => {
               <p>With features that focus on personalized insights, supportive atmosphere, we aim to empower every employee to contribute to a vibrant workplace. Whether you are looking to boost morale, increase productivity, or foster innovation, join us on the path to a more engaged and fulfilled workforce.</p>
             </div>
             <div className="md:w-1/2">
-              <Image 
-                src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg" 
+              <img 
+                src="blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg" 
                 alt="Team Culture"
                 width={600}
                 height={400}
@@ -151,48 +151,27 @@ const CulturePro: NextPage = () => {
         </section>
 
         <section className="py-20 px-6 bg-muted">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-    {/* Left Column: Text Content */}
-    <div>
-      <h2 className="text-3xl font-bold mb-4">Our Solutions</h2>
-      <p className="text-xl text-muted-foreground mb-10">
-        Customized strategies to elevate your employee engagement experience
-      </p>
-      <div className="grid md:grid-cols-2 gap-6">
-        {[
-          { title: 'AI-driven insights', description: 'Data-backed analysis to understand employee' },
-          { title: 'Team-building initiatives', description: 'Engaging activities for team dynamics' },
-          { title: 'Feedback systems', description: 'Structured channels for employee voice and input' },
-          { title: 'Workshops', description: 'Interactive sessions for refreshing workplace' },
-          { title: 'Wellness programs', description: 'Supportive initiatives for overall job emotional' },
-          { title: 'Remote engagement tools', description: 'Virtual solutions maintaining strong workplace' }
-        ].map((solution, index) => (
-          <Button
-            key={index}
-            variant="outline"
-            className="h-auto p-6 text-left flex flex-col items-start hover:bg-accent"
-          >
-            <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
-            <p className="text-muted-foreground mb-4">{solution.description}</p>
-            <span className="text-primary">→</span>
-          </Button>
-        ))}
-      </div>
-    </div>
-
-    {/* Right Column: Image */}
-    <div className="flex justify-center">
-      <img
-        src="https://img.freepik.com/free-photo/diverse-team-having-discussion-modern-workplace_23-2149335375.jpg"
-        alt="Team culture and solutions"
-        width={600}
-        height={400}
-        className="rounded-lg shadow-lg"
-      />
-    </div>
-  </div>
-</section>
-
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Our solutions</h2>
+            <p className="text-xl text-muted-foreground mb-10">Customized strategies to elevate your employee engagement experience</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                { title: 'AI-driven insights', description: 'Data-backed analysis to understand employee' },
+                { title: 'Team-building initiatives', description: 'Engaging activities for team dynamics' },
+                { title: 'Feedback systems', description: 'Structured channels for employee voice and input' },
+                { title: 'Workshops', description: 'Interactive sessions for refreshing workplace' },
+                { title: 'Wellness programs', description: 'Supportive initiatives for overall job emotional' },
+                { title: 'Remote engagement tools', description: 'Virtual solutions maintaining strong workplace' }
+              ].map((solution, index) => (
+                <Button key={index} variant="outline" className="h-auto p-6 text-left flex flex-col items-start hover:bg-accent">
+                  <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                  <p className="text-muted-foreground mb-4">{solution.description}</p>
+                  <span className="text-primary">→</span>
+                </Button>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="py-20 px-6">
   <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -252,7 +231,7 @@ const CulturePro: NextPage = () => {
     {/* Image Section */}
     <div className="flex justify-center">
       <img
-        src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740"
+        src=""
         width={800}
         height={1000}
         className="rounded-lg shadow-lg"
