@@ -131,24 +131,37 @@ const CulturePro: NextPage = () => {
         </section>
 
         <section className="py-20 px-6">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Our Stories</h2>
-              <h3 className="text-xl font-semibold mb-4">Culture Pro AI-Based Employee Engagement Platform</h3>
-              <p className="mb-4">At Culture Pro, we take more than just a platform; we are a catalyst for creating a thriving workplace culture. Our cutting-edge AI technology is tailored to enhance employee engagement while providing meaningful insights.</p>
-              <p>With features that focus on personalized insights, supportive atmosphere, we aim to empower every employee to contribute to a vibrant workplace. Whether you are looking to boost morale, increase productivity, or foster innovation, join us on the path to a more engaged and fulfilled workforce.</p>
-            </div>
-            <div className="md:w-1/2">
-              <img 
-                src="blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg" 
-                alt="Team Culture"
-                width={600}
-                height={400}
-                className="rounded-lg"
-              />
-            </div>
-          </div>
-        </section>
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+    {/* Left Column: Text Content */}
+    <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+      <h2 className="text-3xl font-bold mb-4">Our Stories</h2>
+      <h3 className="text-xl font-semibold mb-4">
+        Culture Pro AI-Based Employee Engagement Platform
+      </h3>
+      <p className="mb-4">
+        At Culture Pro, we take more than just a platform; we are a catalyst for creating a thriving workplace culture. 
+        Our cutting-edge AI technology is tailored to enhance employee engagement while providing meaningful insights.
+      </p>
+      <p>
+        With features that focus on personalized insights and a supportive atmosphere, we aim to empower every employee 
+        to contribute to a vibrant workplace. Whether you are looking to boost morale, increase productivity, or foster innovation, 
+        join us on the path to a more engaged and fulfilled workforce.
+      </p>
+    </div>
+
+    {/* Right Column: Image */}
+    <div className="md:w-1/2 flex justify-center">
+      <Image
+        src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+        alt="Team Culture"
+        width={600}
+        height={400}
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+
 
         <section className="py-20 px-6 bg-muted">
           <div className="max-w-6xl mx-auto">
