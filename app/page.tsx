@@ -77,7 +77,7 @@ export default function CulturePro() {
             <li><a href="app\featured.tsx" className="hover:text-primary">Contact</a></li>
           </ul>
           <div className="space-x-2">
-            <a href="app/pricing.tsx"><Button variant="outline">Sign in</Button></a>
+            <a href="app\sign in.tsx"><Button variant="outline">Sign in</Button></a>
             <Button>Get Started</Button>
           </div>
         </nav>
