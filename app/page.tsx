@@ -151,16 +151,14 @@ const CulturePro: NextPage = () => {
       </p>
     </div>
 
-    {/* Right Column: Image */}
-    <div className="md:w-1/2 flex justify-center">
-      <Image
-        src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
-        alt="Team Culture"
-        width={600}
-        height={400}
-        className="rounded-lg shadow-lg"
-      />
-    </div>
+    <img
+  src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+  alt="Team Culture"
+  width={600}
+  height={400}
+  className="rounded-lg shadow-lg"
+/>
+
   </div>
 </section>
 
