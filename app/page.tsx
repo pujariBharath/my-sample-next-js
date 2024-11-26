@@ -150,7 +150,7 @@ const CulturePro: NextPage = () => {
         join us on the path to a more engaged and fulfilled workforce.
       </p>
     </div>
-    <img src="blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg" alt="" />
+  
 
   </div>
 </section>
