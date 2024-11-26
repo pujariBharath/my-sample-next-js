@@ -223,7 +223,8 @@ const CulturePro: NextPage = () => {
               <Button type="submit" className="w-full">Continue</Button>
             </form>
           </div>
-          <div className="md:w-1/2">
+        </section>
+        <div className="md:w-1/2">
               <img
                 src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900" 
                 alt="AI-powered workspace"
@@ -232,8 +233,6 @@ const CulturePro: NextPage = () => {
                 className="rounded-lg"
               />
             </div>
-            
-        </section>
       </main>
 
       <footer className="bg-primary text-primary-foreground py-20 px-6">
