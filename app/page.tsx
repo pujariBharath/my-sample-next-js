@@ -138,8 +138,8 @@ const CulturePro: NextPage = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740" 
-                alt="Team Culture"
+                src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900" 
+                alt="AI-powered workspace"
                 width={600}
                 height={400}
                 className="rounded-lg"
