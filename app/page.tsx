@@ -157,7 +157,7 @@ export default function CulturePro() {
             </div>
             <div className="md:w-1/2">
               <img
-                src="https://img.freepik.com/free-photo/team-working-together-project_23-2149273705.jpg?t=st=1732606373~exp=1732609973~hmac=e51cd58ba9181aba80eacf019638b571bc9de64e66cf3940b3beecb0dd1a136b&w=360"
+                src="https://img.freepik.com/premium-photo/person-using-ai-tool-job_23-2150711490.jpg?w=900"
                 alt="Team Culture"
                 width={600}
                 height={400}
