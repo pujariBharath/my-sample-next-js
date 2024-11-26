@@ -130,7 +130,9 @@ const CulturePro: NextPage = () => {
           </div>
         </section>
 
-        <section className="py-20 px-6">
+        import Image from 'next/image';
+
+<section className="py-20 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
     {/* Left Column: Text Content */}
     <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
@@ -151,8 +153,8 @@ const CulturePro: NextPage = () => {
 
     {/* Right Column: Image */}
     <div className="md:w-1/2 flex justify-center">
-      <img
-        src="blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+      <Image
+        src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
         alt="Team Culture"
         width={600}
         height={400}
@@ -161,6 +163,7 @@ const CulturePro: NextPage = () => {
     </div>
   </div>
 </section>
+
 
 
         <section className="py-20 px-6 bg-muted">
