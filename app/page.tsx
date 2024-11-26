@@ -90,41 +90,26 @@ const CulturePro: NextPage = () => {
         </section>
 
         <section className="py-20 px-6">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        { 
-          title: 'AI-Driven Persona Mapping', 
-          description: 'Track and analyze your cultural metrics with intelligent data visualization', 
-          image: 'https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid' 
-        },
-        { 
-          title: 'Customizable Dictionaries', 
-          description: 'Train your AI with customized words unique to cultural development', 
-          image: 'https://img.freepik.com/free-photo/computer-programming-language-coding-developer-program-concept_53876-124211.jpg' 
-        },
-        { 
-          title: 'Visual Reports & Insights', 
-          description: 'Get comprehensive data-driven insights for better decision making', 
-          image: 'https://img.freepik.com/free-photo/business-people-analyzing-growth-graph_53876-124521.jpg' 
-        }
-      ].map((card, index) => (
-        <Card key={index}>
-          <CardContent className="p-6">
-            <img 
-              src={card.image} 
-              alt={card.title} 
-              className="rounded-lg w-full mb-4" 
-            />
-            <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-            <p className="text-muted-foreground">{card.description}</p>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { title: 'AI-Driven Persona Mapping', description: 'Track and analyze your cultural metrics with intelligent data visualization', image: 'https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid' },
+                { title: 'Customizable Dictionaries', description: 'Train your AI with customized words unique to cultural development', image: '2nd.jpg' },
+                { title: 'Visual Reports & Insights', description: 'Get comprehensive data-driven insights for better decision making', image: '3rd.jpg' }
+              ].map((card, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <img src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?uid=R134916054&ga=GA1.1.1232746911.1728624937&semt=ais_hybrid"  />
+                    
+                    <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+                    <p className="text-muted-foreground">{card.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="py-20 px-6 bg-muted">
           <div className="max-w-6xl mx-auto">
@@ -166,12 +151,13 @@ const CulturePro: NextPage = () => {
       </p>
     </div>
 
-    {/* <img  src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+    <img
+  src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
   alt="Team Culture"
   width={600}
   height={400}
   className="rounded-lg shadow-lg"
-/> */}
+/>
 
   </div>
 </section>
@@ -256,7 +242,7 @@ const CulturePro: NextPage = () => {
       </form>
     </div>
 
-    {/* Image Section
+    {/* Image Section */}
     <div className="flex justify-center">
       <img
         src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740"
@@ -264,7 +250,7 @@ const CulturePro: NextPage = () => {
         height={1000}
         className="rounded-lg shadow-lg"
       />
-    </div> */}
+    </div>
   </div>
 </section>
 
