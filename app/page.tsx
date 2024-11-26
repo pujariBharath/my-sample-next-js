@@ -137,7 +137,7 @@ const CulturePro: NextPage = () => {
               <p>With features that focus on personalized insights, supportive atmosphere, we aim to empower every employee to contribute to a vibrant workplace. Whether you are looking to boost morale, increase productivity, or foster innovation, join us on the path to a more engaged and fulfilled workforce.</p>
             </div>
             <div className="md:w-1/2">
-              <Image 
+              <img
                 src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740" 
                 alt="Team Culture"
                 width={600}
