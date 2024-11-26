@@ -174,65 +174,73 @@ const CulturePro: NextPage = () => {
         </section>
 
         <section className="py-20 px-6">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-4">Get in touch with us</h2>
-            <p className="text-xl text-muted-foreground text-center mb-10">Get in touch with our Team AI-Based Employee Engagement Platform</p>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <Input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={handleInputChange}
-                  required
-                />
-                <Input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  value={formData.lastName}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-              <Input
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
-              />
-              <Input
-                type="text"
-                name="company"
-                placeholder="Company"
-                value={formData.company}
-                onChange={handleInputChange}
-                required
-              />
-              <Button type="submit" className="w-full">Continue</Button>
-            </form>
-          </div>
-        </section>
-        <div className="md:w-1/2">
-              <img
-                src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900" 
-                alt="AI-powered workspace"
-                width={600}
-                height={400}
-                className="rounded-lg"
-              />
-            </div>
+  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    {/* Form Section */}
+    <div>
+      <h2 className="text-3xl font-bold text-center md:text-left mb-4">Get in touch with us</h2>
+      <p className="text-xl text-muted-foreground text-center md:text-left mb-10">
+        Get in touch with our Team AI-Based Employee Engagement Platform
+      </p>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-6">
+          <Input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleInputChange}
+            required
+          />
+          <Input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <Input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
+          required
+        />
+        <Input
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          value={formData.phone}
+          onChange={handleInputChange}
+          required
+        />
+        <Input
+          type="text"
+          name="company"
+          placeholder="Company"
+          value={formData.company}
+          onChange={handleInputChange}
+          required
+        />
+        <Button type="submit" className="w-full">Continue</Button>
+      </form>
+    </div>
+
+    {/* Image Section */}
+    <div className="flex justify-center">
+      <img
+        src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900"
+        alt="AI-powered workspace"
+        width={600}
+        height={400}
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+
       </main>
 
       <footer className="bg-primary text-primary-foreground py-20 px-6">
