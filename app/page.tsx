@@ -123,10 +123,8 @@ export default function CulturePro() {
                 <Card key={index}>
                   <CardContent className="p-6">
                     <div className="aspect-video relative mb-4 overflow-hidden rounded-lg">
-                      <Image
-                        src={feature.image}
-                        alt={feature.title}
-                        fill
+                      <img src='1stt.jpg'
+                        
                         className="object-cover"
                       />
                     </div>
