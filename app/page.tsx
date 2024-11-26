@@ -156,8 +156,8 @@ export default function CulturePro() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <Image
-                src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+              <img
+                src="blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
                 alt="Team Culture"
                 width={600}
                 height={400}
@@ -239,7 +239,7 @@ export default function CulturePro() {
               </form>
             </div>
             <div className="flex justify-center">
-              <Image
+              <img
                 src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740"
                 alt="Handshake illustration"
                 width={800}
