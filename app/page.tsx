@@ -150,7 +150,14 @@ const CulturePro: NextPage = () => {
         join us on the path to a more engaged and fulfilled workforce.
       </p>
     </div>
-  
+
+    <img
+  src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg"
+  alt="Team Culture"
+  width={600}
+  height={400}
+  className="rounded-lg shadow-lg"
+/>
 
   </div>
 </section>
@@ -235,7 +242,7 @@ const CulturePro: NextPage = () => {
       </form>
     </div>
 
-    {/* Image Section
+    {/* Image Section */}
     <div className="flex justify-center">
       <img
         src="https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?t=st=1732592756~exp=1732596356~hmac=38b39a9d77e9b863ca4ed919a88e5916e7346ca7d701bd6376fbb74fccd1063b&w=740"
@@ -243,7 +250,7 @@ const CulturePro: NextPage = () => {
         height={1000}
         className="rounded-lg shadow-lg"
       />
-    </div> */}
+    </div>
   </div>
 </section>
 
