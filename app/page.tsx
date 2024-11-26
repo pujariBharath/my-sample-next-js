@@ -136,14 +136,15 @@ const CulturePro: NextPage = () => {
               <p className="mb-4">At Culture Pro, we take more than just a platform; we are a catalyst for creating a thriving workplace culture. Our cutting-edge AI technology is tailored to enhance employee engagement while providing meaningful insights.</p>
               <p>With features that focus on personalized insights, supportive atmosphere, we aim to empower every employee to contribute to a vibrant workplace. Whether you are looking to boost morale, increase productivity, or foster innovation, join us on the path to a more engaged and fulfilled workforce.</p>
             </div>
-            
-              <img
+            <div className="md:w-1/2">
+              <Image 
                 src="/blockchain-certificates-play-important-role-certification-our-lives_1300345-1505.jpg" 
                 alt="Team Culture"
                 width={600}
                 height={400}
                 className="rounded-lg"
               />
+            </div>
           </div>
         </section>
 
@@ -219,6 +220,15 @@ const CulturePro: NextPage = () => {
               />
               <Button type="submit" className="w-full">Continue</Button>
             </form>
+            <div className="md:w-1/2">
+              <img
+                src="https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003763.jpg?t=st=1732514739~exp=1732518339~hmac=d29110d2dd9596a21616dea2f93a42664abbdb2a971d7cb03d469c1a10c4bf7e&w=900" 
+                alt="AI-powered workspace"
+                width={600}
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </section>
       </main>
