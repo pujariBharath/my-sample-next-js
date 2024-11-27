@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true, // Enforce strict mode for React
+    reactStrictMode: true,
     images: {
       domains: [
-        'img.freepik.com', // Add external image domains used in your project
-        'cdn.prod.website-files.com',
-        // Add any additional domains here
+        'img.freepik.com', // For freepik images
+        'cdn.prod.website-files.com', // For CDN images
       ],
     },
   };

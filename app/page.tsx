@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 
+
 export default function CulturePro() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -123,7 +124,7 @@ export default function CulturePro() {
                 <Card key={index}>
                   <CardContent className="p-6">
                     <div className="aspect-video relative mb-4 overflow-hidden rounded-lg">
-                      <img src='1stt.jpg'
+                      <img src='https://img.freepik.com/premium-photo/team-working-together-project_23-2149273725.jpg?w=900'
                         
                         className="object-cover"
                       />
