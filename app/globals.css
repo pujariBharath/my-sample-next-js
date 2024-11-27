@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-  .bg-background {
-    background-color: #f5f5f5; /* Replace with your desired color */
+@layer components {
+  .border-border {
+    @apply border-2 border-gray-500;
   }
 }
+
 
 
 
