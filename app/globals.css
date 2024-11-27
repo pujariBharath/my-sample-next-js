@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .border-border {
-    @apply border-2 border-gray-500;
+@layer utilities {
+  .bg-background {
+    background-color: #f0f0f0; /* Example color */
   }
 }
+
+
 
 
 
