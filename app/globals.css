@@ -4,11 +4,16 @@
 
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities {
-  .border-border {
-    @apply border; /* Add additional styles here if needed */
+  .bg-background {
+    background-color: #f5f5f5; /* Replace with your desired color */
   }
 }
+
 
 
 
