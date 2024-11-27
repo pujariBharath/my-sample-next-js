@@ -1,7 +1,3 @@
-import Image from 'next/image'; // Ensure you’re using Next.js Image for images
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
 
 import { useState } from "react";
 
