@@ -71,7 +71,7 @@ export default function CulturePro() {
         <nav className="flex justify-between items-center">
           <a href="#" className="text-2xl font-bold">LOGO</a>
           <ul className="hidden md:flex space-x-6">
-            <li><a href="app\Home.tsx" className="hover:text-primary">Home</a></li>
+            <li><a href="" className="hover:text-primary">Home</a></li>
             <li><a href="app\casestudies.tsx" className="hover:text-primary">Case Studies</a></li>
             <li><a href="app\pricing.tsx" className="hover:text-primary">Pricing</a></li>
             <li><a href="app\featured.tsx" className="hover:text-primary">Featured</a></li>
