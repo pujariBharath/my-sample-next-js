@@ -106,14 +106,7 @@ export default function CulturePro() {
           </div>
         </section>
 
-        {/* Logo Section */}
-        <section className="py-10 px-6 bg-muted">
-          <div className="max-w-6xl mx-auto flex justify-between items-center flex-wrap">
-            {['657ab121c368c0f3c1a8ca5e_Frame%202087325962.svg', '657ab121ded9009bc4efd720_Frame%202087325959.svg', '657ab1231c0265f85185458a_Frame%202087325958.svg', '657ab1211fb97ff1a55330df_Frame%202087325957.svg'].map((img, index) => (
-              <Image key={index} src={`https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/${img}`} alt="" width={150} height={50} />
-            ))}
-          </div>
-        </section>
+       
 
         {/* Features Section */}
         <section className="py-20 px-6">
@@ -141,7 +134,8 @@ export default function CulturePro() {
         {/* Features Section */}
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
+            <h2 className="text-3xl font-bold mb-4">Culture Pro AI-Based Employee Engagement Platform </h2>
+            <h2 className="text-3xl font-bold text-center mb-10"></h2>
             <div className="grid md:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <Card key={index}>
