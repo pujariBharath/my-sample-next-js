@@ -142,13 +142,14 @@ export default function CulturePro() {
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Culture Pro AI-Based Employee Engagement Platform </h2>
-            <h2 className="text-3xl font-bold text-center mb-10">vhgfjggil</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-1 gap-8">
               {features.map((feature, index) => (
                 <Card key={index}>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">hjvuv</h3>
-                    <p className="text-muted-foreground">34</p>
+                    <h3 className="text-xl font-semibold mb-2">Enhance</h3>
+                    
+                    <p className="text-muted-foreground">Elevate your workplace culture with our innovative AI solutions designed to foster engagement and productivity.</p>
+                    <p className="text-muted-foreground">Services </p>
                   </CardContent>
                 </Card>
               ))}
