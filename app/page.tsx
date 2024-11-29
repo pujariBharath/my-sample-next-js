@@ -106,7 +106,14 @@ export default function CulturePro() {
           </div>
         </section>
 
-       
+        {/* Logo Section */}
+        <section className="py-10 px-6 bg-muted">
+          <div className="max-w-6xl mx-auto flex justify-between items-center flex-wrap">
+            {['657ab121c368c0f3c1a8ca5e_Frame%202087325962.svg', '657ab121ded9009bc4efd720_Frame%202087325959.svg', '657ab1231c0265f85185458a_Frame%202087325958.svg', '657ab1211fb97ff1a55330df_Frame%202087325957.svg'].map((img, index) => (
+              <Image key={index} src={`https://cdn.prod.website-files.com/60ebdc9660a5ca3465dd2b4e/${img}`} alt="" width={150} height={50} />
+            ))}
+          </div>
+        </section>
 
         {/* Features Section */}
         <section className="py-20 px-6">
