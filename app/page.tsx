@@ -138,6 +138,29 @@ export default function CulturePro() {
           </div>
         </section>
 
+        {/* Features Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-10">How Culture Pro Works</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="aspect-video relative mb-4 overflow-hidden rounded-lg">
+                      <img src='https://img.freepik.com/premium-photo/team-working-together-project_23-2149273725.jpg?w=900'
+                        
+                        className="object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Our Story Section */}
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
