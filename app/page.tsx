@@ -131,7 +131,7 @@ export default function CulturePro() {
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground">{feature.description}</p>
-                  </CardContent>
+                  </CardContent>  
                 </Card>
               ))}
             </div>
@@ -142,19 +142,13 @@ export default function CulturePro() {
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Culture Pro AI-Based Employee Engagement Platform </h2>
-            <h2 className="text-3xl font-bold text-center mb-10"></h2>
+            <h2 className="text-3xl font-bold text-center mb-10">vhgfjggil</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <Card key={index}>
                   <CardContent className="p-6">
-                    <div className="aspect-video relative mb-4 overflow-hidden rounded-lg">
-                      <img src='https://img.freepik.com/premium-photo/team-working-together-project_23-2149273725.jpg?w=900'
-                        
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">hjvuv</h3>
+                    <p className="text-muted-foreground">34</p>
                   </CardContent>
                 </Card>
               ))}
