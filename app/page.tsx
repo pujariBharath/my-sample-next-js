@@ -53,6 +53,7 @@ export default function CulturePro() {
       description: 'Get comprehensive data-driven insights for better decision making',
       image: '/placeholder.svg?height=200&width=300'
     }
+    
   ]
 
   const solutions = [
