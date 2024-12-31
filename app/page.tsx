@@ -48,6 +48,8 @@ export default function CulturePro() {
       description: 'Train your AI with customized words unique to cultural development',
       image: '/placeholder.svg?height=200&width=300'
     },
+
+    
     {
       title: 'Visual Reports & Insights',
       description: 'Get comprehensive data-driven insights for better decision making',
